@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desarrollo Web Espacial - CTP de Aserrí</title>
+    <link rel="stylesheet" href="/styles.css">
+    
+</head>
+<body>
+    <canvas id="starfield"></canvas>
+    <header>
+        <img src="IMG/Logo CTPA.png" alt="Logo CTP de Aserrí" class="logo">
+        <h1>¡Explora el universo del Desarrollo Web!</h1>
+        <p class="subtitulo">Feria de Especialidades Técnicas 2025</p>
+    </header>
+    <main>
+
+        <section class="galaxia">
+            <h2>¿Qué aprenderás en nuestra especialidad?</h2>
+            <div class="contenedor-cards">
+                <div class="card">
+                    <h3>HTML5</h3>
+                    <p>Construye la estructura de páginas web como los cimientos de una estación espacial.</p>
+                </div>
+                <div class="card">
+                    <h3>CSS3</h3>
+                    <p>Estiliza con efectos visuales sorprendentes que rivalizan con las nebulosas más hermosas.</p>
+                </div>
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>Agrega interacción y dinamismo galáctico a tus creaciones web.</p>
+                </div>
+                <div class="card">
+                    <h3>Diseño Responsivo</h3>
+                    <p>Adapta tus sitios a cualquier planeta... o dispositivo en el universo digital.</p>
+                </div>
+                <div class="card">
+                    <h3>Bases de Datos</h3>
+                    <p>Almacena información como los archivos de una biblioteca galáctica.</p>
+                </div>
+                <div class="card">
+                    <h3>Frameworks</h3>
+                    <p>Utiliza herramientas poderosas para construir aplicaciones como naves espaciales.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="categories-section">
+            <a href="/ninos-familia" class="category-item">
+                <img src="IMG/Imagen html.jpg" alt="HTML" class="category-image">
+                <div class="category-overlay"></div>
+                <div class="category-content">
+                    <div class="category-title">Lenguajes de Etiquetas</div>
+                    <div class="category-subtitle">HTML</div>
+                    <div class="category-description">Código de etiquetas para estructurar el cuerpo de páginas web espaciales</div>
+                </div>
+            </a>
+
+            <a href="/reality" class="category-item">
+                <img src="IMG/imagen css2.png" alt="CSS" class="category-image">
+                <div class="category-overlay"></div>
+                <div class="category-content">
+                    <div class="category-title">Lenguajes de Estilos</div>
+                    <div class="category-subtitle">CSS</div>
+                    <div class="category-description">Explora los lenguajes que dan magia visual a las páginas del cosmos digital</div>
+                </div>
+            </a>
+
+            <a href="/cine" class="category-item">
+                <img src="IMG/js imagen.webp" alt="JavaScript" class="category-image">
+                <div class="category-overlay"></div>
+                <div class="category-content">
+                    <div class="category-title">Lenguajes de Programación Dinámicos</div>
+                    <div class="category-subtitle">JavaScript</div>
+                    <div class="category-description">Investiga uno de los lenguajes más utilizados en la galaxia del desarrollo web</div>
+                </div>
+            </a>
+
+            <a href="/drama" class="category-item">
+                <img src="IMG/Python imagen.png" alt="Python" class="category-image">
+                <div class="category-overlay"></div>
+                <div class="category-content">
+                    <div class="category-title">Lenguajes de Programación Modernos</div>
+                    <div class="category-subtitle">Python</div>
+                    <div class="category-description">Aprende el lenguaje de programación más usado en todo el universo tecnológico</div>
+                </div>
+            </a>
+
+            <a href="/comedia" class="category-item">
+                <img src="IMG/C++ imagenes.jpg" alt="C++" class="category-image">
+                <div class="category-overlay"></div>
+                <div class="category-content">
+                    <div class="category-title">Lenguajes de Programación Fundamentales</div>
+                    <div class="category-subtitle">C++</div>
+                    <div class="category-description">Descubre los fundamentos de la programación y su evolución a través del tiempo</div>
+                </div>
+            </a>
+        </div>
+
+        <section class="game-section">
+            <h2>🎮 Centro de Juegos Espaciales</h2>
+            <p>Pon a prueba tus habilidades mientras exploras el universo del desarrollo web</p>
+
+            <div class="games-container">
+                <div class="original-game">
+                    <h3 style="color: #00ffff; margin-bottom: 1rem;">🌟 Recolector de Códigos Estelares</h3>
+                    <p>Mueve tu nave y atrapa solo los fragmentos correctos de código web, mientras recolectas las estrellas del conocimiento.</p>
+                    <div class="controls">
+                        <button id="startCodeGame">Iniciar Juego</button>
+                        <button id="stopCodeGame">Detener Juego</button>
+                        <button id="startStarGame">Iniciar MiniJuego</button>
+                    </div>
+                    <canvas id="gameCanvas" width="400" height="400"></canvas>
+                    <p id="puntuacion">Puntos: 0</p>
+                </div>
+
+                <div class="frogger-game">
+                    <h3 class="frogger-title">🐸 Explorador Espacial</h3>
+                    <div class="frogger-instructions">
+                        Usa las flechas para mover al explorador. ¡Cruza el campo de asteroides sin ser impactado!
+                    </div>
+                    <canvas id="froggerCanvas" width="500" height="400"></canvas>
+                    <div class="frogger-score" id="froggerScore">Puntuación: 0</div>
+                    <div class="frogger-game-over" id="froggerGameOver" style="display: none;">
+                        ¡Misión Fallida! Presiona ESPACIO para reiniciar
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="galeria">
+            <h2>Proyectos Espaciales</h2>
+            <div class="contenedor-proyectos">
+                <div class="proyecto">
+                    <img src="proyecto1.jpg" alt="Proyecto 1">
+                    <h3>Cinepondio</h3>
+                    <p>Sitio web de cine</p>
+                </div>
+                <div class="proyecto">
+                    <img src="proyecto2.jpg" alt="Proyecto 2">
+                    <h3>API Museo</h3>
+                    <p>Plataforma de noticias y libros</p>
+                </div>
+                <div class="proyecto">
+                    <img src="proyecto3.jpg" alt="Proyecto 3">
+                    <h3>Tienda Espacial</h3>
+                    <p>E-commerce futurista con carrito de compras intergaláctico</p>
+                </div>
+            </div>
+            <p style="margin-top: 2rem; font-size: 1.1rem;">Escanea el código para más información sobre nuestros proyectos:</p>
+            <img src="qr_ctpaserri.png" alt="QR de contacto" class="qr">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CTP de Aserrí - Especialidad Desarrollo Web | Explorando el futuro digital</p>
+    </footer>
+  <script src="/scripts.js"></script>
+</body>
+</html>
